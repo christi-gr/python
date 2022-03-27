@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+# Find files '.c' in input folder (-i), and store in output file (-o).
+# Read pattern CSV file (-p) which contain search and replace data
+# Replace text in '.c' files according  reg exp pattern and replacement in pattern.csv file.
+
+# python3 script.py -i ./ -p pattern.csv -o out.txt
+
 
 import sys
 import getopt
