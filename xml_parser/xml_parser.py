@@ -1,7 +1,6 @@
 import xml.etree.ElementTree as ET
 import re, os, glob
 import pandas as pd
-parser_file = '/tmp/sample.xml'
 
 def parse_file( parser_file ):
     print(parser_file)
@@ -14,7 +13,6 @@ def parse_file( parser_file ):
 
     rows = []
 
-    #tree.find('//{http://www.irs.gov/efile}ReturnData/{http://www.irs.gov/efile}IRS990/{http://www.irs.gov/efile}Form990PartVIISectionAGrp')
     for item in tree.findall('.//ReturnData/IRS990/Form990PartVIISectionAGrp'):
         data = {}
         for tag in tags:
